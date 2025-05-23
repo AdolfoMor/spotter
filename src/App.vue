@@ -15,6 +15,7 @@
       <button class="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded">
         Learn More
       </button>
+    <Cuerpo />
     </main>
 
     <!-- Modal -->
@@ -32,8 +33,14 @@
 
 <script>
 import Header from './components/Header.vue';
+import Tabla from './components/Tabla.vue';
+import Cuerpo from './components/Cuerpo.vue';
 export default {
-  components: { Header },
+  components: 
+  { Header, 
+    Tabla,
+    Cuerpo
+  },
   data() {
     return {
       showMenu: false,

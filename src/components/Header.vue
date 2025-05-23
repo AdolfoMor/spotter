@@ -1,6 +1,6 @@
 <template>
 
-    <header class="bg-white shadow-sm sticky top-0 z-10">
+    <header class="bg-[hsla(60,29%,97%,0.8)] shadow-sm sticky top-0 z-10">
     <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between relative text-sm">
 
       <!-- Logo a la izquierda -->
@@ -20,18 +20,18 @@
       </nav>
 
       <!-- Botones derecha -->
-      <!-- En md+ visible, en lg ya también Login -->
+      <!-- md+ -->
       <nav class="hidden md:flex items-center space-x-4 ml-auto">
         <!-- Login solo visible lg -->
         <a href="#" class="text-gray-700 hover:text-orange-600 hidden lg:inline-block whitespace-nowrap">Login</a>
 
-        <!-- Contact Sales visible md+ -->
+        <!-- md+ -->
         <a href="#" 
            class="border border-orange-600 text-orange-600 px-4 py-2 rounded hover:bg-orange-50 transition whitespace-nowrap">
           Contact Sales
         </a>
 
-        <!-- Get Started visible md+ -->
+        <!--  md+ -->
         <button
           @click="showModal = true"
           class="ml-4 bg-orange-600 text-white px-4 py-2 rounded whitespace-nowrap"
