@@ -1,52 +1,57 @@
 <template>
-  <div class="container mx-auto px-4 py-8 max-w-3xl">
-    <!-- Sección principal  -->
-    <div class="border border-gray-300 p-6 mb-8 text-center rounded-lg">
-      <div class="space-y-4"> <!-- Div para el título y texto -->
-        <h1 class="text-3xl font-bold">The internet's most accurate visitor identifier</h1>
-        <p class="text-xl"><strong>Industry-leading accuracy</strong> that lasts for months or years...</p>
+  <div class="min-h-screen flex items-center justify-center p-6">
+    <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Panel principal -->
+      <div class="md:col-span-2 rounded-xl shadow-lg p-10 flex flex-col justify-between">
+        <div>
+          <span class="text-white text-xs px-2 py-1 rounded">Why Fingerprint</span>
+          <h1 class="mt-4 text-4xl font-bold">
+            The internet's most <span class="text-orange-500">accurate</span> visitor identifier
+          </h1>
+          <p class="mt-4 text-gray-700 font-semibold">
+            Industry-leading accuracy <span class="font-normal">that lasts for months or years, even when cookies are cleared.</span>
+          </p>
+        </div>
+        <button class="mt-8 w-40 text-white font-semibold py-2 rounded hover:bg-gray-200 transition">
+          Learn More
+        </button>
+        <!-- Aquí puedes poner el gráfico (usa un SVG, imagen o componente de gráfico) -->
+        <div class="mt-8">
+          <!-- Ejemplo de gráfico simulado -->
+           <Tabla />
+          <!-- <div class="h-32 bg-gradient-to-r from-orange-300 to-purple-300 rounded"></div> -->
+        </div>
       </div>
-      
-      <!-- Contenedor del gráfico  -->
-      <div class="border-2 border-dashed border-gray-400 h-48 my-8 rounded-lg"></div>
-      
-      <!-- Leyenda del gráfico -->
-      <div class="flex justify-between text-sm text-gray-600 mb-1 px-2">
-        <span>0</span><span>30</span><span>60</span><span>90</span><span>120</span>
-      </div>
-      <p class="text-xs uppercase tracking-wider text-gray-500">ACCURACY DROPOFF DAYS AFTER INITIAL IDENTIFICATION</p>
-      
-      <!-- Botón  -->
-      <div class="mt-8">
-        <div class="inline-block border border-gray-400 px-6 py-2 rounded-md">Learn More</div>
-      </div>
-    </div>
-
-    <!-- Secciones de características (3 cajas) -->
-    <div class="grid md:grid-cols-2 gap-6">
-      <!-- Caja 1 -->
-      <div class="border-l-4 border-gray-400 p-5 bg-gray-50 rounded-r-lg">
-        <h3 class="text-xl font-semibold mb-3">Any browser, any device.</h3>
-        <div class="h-16 border border-gray-300 rounded"></div> <!-- Texto placeholder -->
-      </div>
-      
-      <!-- Caja 2 -->
-      <div class="border-l-4 border-gray-400 p-5 bg-gray-50 rounded-r-lg">
-        <h3 class="text-xl font-semibold mb-3">Identify all anonymous visitors.</h3>
-        <div class="h-16 border border-gray-300 rounded"></div> <!-- Texto placeholder -->
-      </div>
-      
-      <!-- Caja 3 (full width en móvil, 2 cols en desktop) -->
-      <div class="border-l-4 border-gray-400 p-5 bg-gray-50 rounded-r-lg md:col-span-2">
-        <h3 class="text-xl font-semibold mb-3">Delight your trusted users.</h3>
-        <div class="h-16 border border-gray-300 rounded"></div> <!-- Texto placeholder -->
+      <!-- Panel derecho: tarjetas -->
+      <div class="flex flex-col gap-6">
+        <div class="rounded-xl shadow p-6 flex flex-col gap-2">
+          <span class="text-orange-500 text-2xl">🔎</span>
+          <h2 class="font-semibold">Any browser, any device.</h2>
+          <p class="text-gray-600 text-sm">Identify returning web and mobile app visitors on all browsers, iOS, and Android, with exceptional accuracy.</p>
+        </div>
+        <div class="rounded-xl shadow p-6 flex flex-col gap-2">
+          <span class="text-orange-500 text-2xl">🕵️‍♂️</span>
+          <h2 class="font-semibold">Identify all anonymous visitors.</h2>
+          <p class="text-gray-600 text-sm">Get details on suspicious visitors even when VPN, incognito mode, or a tampered browser or device is used.</p>
+        </div>
+        <div class="rounded-xl shadow p-6 flex flex-col gap-2">
+          <span class="text-orange-500 text-2xl">🎉</span>
+          <h2 class="font-semibold">Delight your trusted users.</h2>
+          <p class="text-gray-600 text-sm">Personalize user experience and reduce 2FA and OTP requirements by identifying logged-out users.</p>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
+
 <script>
+import Tabla from './Tabla.vue';
 export default {
+components: 
+  {  
+    Tabla
+  },
   name: 'StructureOnly'
 }
 </script>

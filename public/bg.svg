@@ -1,0 +1,20 @@
+<svg width="1536" height="747" viewBox="0 0 1536 747" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="circleGradient" x1="0" y1="0" x2="800" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#176B74"/>
+      <stop offset="1" stop-color="#124E5B"/>
+    </linearGradient>
+    <clipPath id="waveClip">
+      <path d="
+        M0,0
+        H1536
+        V600
+        C1152,800 384,800 0,600
+        Z
+      " />
+    </clipPath>
+  </defs>
+
+  <rect width="1536" height="747" fill="#0D1A2F" clip-path="url(#waveClip)" />
+  <circle cx="0" cy="747" r="800" fill="url(#circleGradient)" clip-path="url(#waveClip)" />
+</svg>
