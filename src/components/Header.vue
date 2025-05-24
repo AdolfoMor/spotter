@@ -22,18 +22,18 @@
       <nav
         class="hidden lg:flex space-x-6 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
       >
-        <a href="#" class="text-white hover:text-orange-600 whitespace-nowrap">Product</a>
-        <a href="#" class="text-white hover:text-orange-600 whitespace-nowrap">Use Cases</a>
-        <a href="#" class="text-white hover:text-orange-600 whitespace-nowrap">Developers</a>
-        <a href="#" class="text-white hover:text-orange-600 whitespace-nowrap">Pricing</a>
-        <a href="#" class="text-white hover:text-orange-600 whitespace-nowrap">Demo</a>
+        <a href="#" class="text-white hover:text-[#176B74] whitespace-nowrap">Product</a>
+        <a href="#" class="text-white hover:text-[#176B74] whitespace-nowrap">Use Cases</a>
+        <a href="#" class="text-white hover:text-[#176B74] whitespace-nowrap">Developers</a>
+        <a href="#" class="text-white hover:text-[#176B74] whitespace-nowrap">Pricing</a>
+        <a href="#" class="text-white hover:text-[#176B74] whitespace-nowrap">Demo</a>
       </nav>
 
       <!-- Botones derecha -->
       <!-- md+ -->
       <nav class="hidden md:flex items-center space-x-4 ml-auto">
         <!-- Login solo visible lg -->
-        <a href="#" class="text-white hover:text-orange-600 hidden lg:inline-block whitespace-nowrap">Login</a>
+        <a href="#" class="text-white hover:text-[#176B74] hidden lg:inline-block whitespace-nowrap">Login</a>
 
         <!-- md+ -->
         <a href="#" 
@@ -72,11 +72,11 @@
     <div v-if="showMenu" class="bg-white shadow-md border-t border-gray-200 lg:hidden">
       <nav class="flex flex-col space-y-2 p-4">
         <!-- SOLO botones centrales en menú hamburguesa -->
-        <a href="#" class="text-gray-700 hover:text-orange-600">Product</a>
-        <a href="#" class="text-gray-700 hover:text-orange-600">Use Cases</a>
-        <a href="#" class="text-gray-700 hover:text-orange-600">Developers</a>
-        <a href="#" class="text-gray-700 hover:text-orange-600">Pricing</a>
-        <a href="#" class="text-gray-700 hover:text-orange-600">Demo</a>
+        <a href="#" class="text-gray-700 hover:text-[#176B74]">Product</a>
+        <a href="#" class="text-gray-700 hover:text-[#176B74]">Use Cases</a>
+        <a href="#" class="text-gray-700 hover:text-[#176B74]">Developers</a>
+        <a href="#" class="text-gray-700 hover:text-[#176B74]">Pricing</a>
+        <a href="#" class="text-gray-700 hover:text-[#176B74]">Demo</a>
       </nav>
     </div>
 
